@@ -14,7 +14,7 @@ import { type ReactNode } from 'react'
 
 export const docsConfig = {
 	title: '深入伪人世界？！',
-	baseUrl: 'https://non-human.game.oom-wg.dev',
+	baseUrl: 'https://ninah.wiki.gal.tf',
 	authors: [
 		{ name: 'ShIroRRen', url: 'https://shiror.ren' },
 		{
@@ -107,7 +107,7 @@ export const docsConfig = {
 		copyright: ReactNode
 	},
 	git: {
-		user: 'OOM-WG',
+		user: 'ShIroYing',
 		repo: 'NINAH-Docs',
 		branch: 'shiror.ren'
 	} satisfies {
