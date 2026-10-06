@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: ninah.wiki.gal.tf
+Sitemap: https://ninah.wiki.gal.tf/sitemap.xml

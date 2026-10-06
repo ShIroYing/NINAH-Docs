@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.1v_m1h73k6yt4.webp","image"]
+:HL["/_next/static/media/hands-god.3850eopuyrs7v.webp","image"]
+:HL["/_next/static/media/hands-bad.2nlh16v5dnko2.webp","image"]
+:HL["/_next/static/media/pic-god.1f42291k2bfp2.webp","image"]
+:HL["/_next/static/media/pic-bad.3g_qdxxn4kpj4.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/luka","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

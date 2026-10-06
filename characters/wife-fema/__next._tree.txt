@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.0dpvo21u_9tpd.webp","image"]
+:HL["/_next/static/media/hands-god.1n24uytlab_ee.webp","image"]
+:HL["/_next/static/media/hands-bad.39jhtp4uyp35u.webp","image"]
+:HL["/_next/static/media/eye-god.1xkrsxty7qlsu.webp","image"]
+:HL["/_next/static/media/eye-bad.159dxl9z-pw00.webp","image"]
+:HL["/_next/static/media/armpit-god.1l9o-5m-6-kbg.webp","image"]
+:HL["/_next/static/media/armpit-bad.1z5e8y1nnu2x7.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/wife-fema","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

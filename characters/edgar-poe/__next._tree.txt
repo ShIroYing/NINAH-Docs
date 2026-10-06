@@ -1,0 +1,13 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.0i3xoxx2zeu86.webp","image"]
+:HL["/_next/static/media/teeth-god.28360_823-h0w.webp","image"]
+:HL["/_next/static/media/teeth-bad.03ter40tj1qk6.webp","image"]
+:HL["/_next/static/media/eye-god.0nkmes1o6w8kl.webp","image"]
+:HL["/_next/static/media/eye-bad.0nd3iolwk-mvq.webp","image"]
+:HL["/_next/static/media/armpit-god.0fq030wl6zg4e.webp","image"]
+:HL["/_next/static/media/armpit-bad.11m_8anyqh9al.webp","image"]
+:HL["/_next/static/media/pic-god.2ibmntdl18vn4.webp","image"]
+:HL["/_next/static/media/pic-bad.1-h7xk2g-3hnn.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/edgar-poe","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

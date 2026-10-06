@@ -1,0 +1,13 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.1j6pyhxwxyq14.webp","image"]
+:HL["/_next/static/media/teeth-god.1jd6lj4xd4rmz.webp","image"]
+:HL["/_next/static/media/teeth-bad.28evp__njnaxz.webp","image"]
+:HL["/_next/static/media/hands-god.2zqfsa2rnttpx.webp","image"]
+:HL["/_next/static/media/hands-bad.2rgyfiztw3je6.webp","image"]
+:HL["/_next/static/media/eye-god.21gctiwt2hez3.webp","image"]
+:HL["/_next/static/media/eye-bad.2q06nuksig1qt.webp","image"]
+:HL["/_next/static/media/armpit-god.0mv5gvg5axfr6.webp","image"]
+:HL["/_next/static/media/armpit-bad.355z7py_8_car.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/taxi-driver","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

@@ -1,0 +1,114 @@
+# [深入伪人世界？！](https://ninah.wiki.gal.tf)
+
+## Pages
+
+- [**人物图鉴**](https://ninah.wiki.gal.tf/characters.md): 游戏《寻找伪人》的人物图鉴
+- [**坦然面对必然发生的事**](https://ninah.wiki.gal.tf/endings/embrace-the-inevitable.md): 游戏《寻找伪人》的游戏结局之一
+- [**黑暗之中（常规单人结局）**](https://ninah.wiki.gal.tf/endings/in-the-dark.md): 游戏《寻找伪人》的游戏结局之一
+- [**游戏结局**](https://ninah.wiki.gal.tf/endings.md): 游戏《寻找伪人》的游戏结局
+- [**愿死亡涤荡我们的罪孽！**](https://ninah.wiki.gal.tf/endings/may-death-cleanse-us-of-our-sins.md): 游戏《寻找伪人》的游戏结局之一
+- [**我并非独自一人（常规坏结局）**](https://ninah.wiki.gal.tf/endings/no-im-not-alone.md): 游戏《寻找伪人》的游戏结局之一
+- [**是蘑菇还是天谴？**](https://ninah.wiki.gal.tf/endings/shroom-or-doom.md): 游戏《寻找伪人》的游戏结局之一
+- [**末日之子**](https://ninah.wiki.gal.tf/endings/the-child-of-doom.md): 游戏《寻找伪人》的游戏结局之一
+- [**结局？（常规好结局）**](https://ninah.wiki.gal.tf/endings/the-end.md): 游戏《寻找伪人》的游戏结局之一
+- [**欢迎加入应急中心**](https://ninah.wiki.gal.tf/endings/welcome-to-fema.md): 游戏《寻找伪人》的游戏结局之一
+- [**义警之怒**](https://ninah.wiki.gal.tf/endings/wrath-of-the-vigilante.md): 游戏《寻找伪人》的游戏结局之一
+- [**我是杀人凶手**](https://ninah.wiki.gal.tf/endings/yes-im-a-murderer.md): 游戏《寻找伪人》的游戏结局之一
+- [**我的确独自一人**](https://ninah.wiki.gal.tf/endings/yes-im-alone.md): 游戏《寻找伪人》的游戏结局之一
+- [**《寻找伪人》游戏攻略文档**](https://ninah.wiki.gal.tf/index.md): 警告：切勿外出。紧闭门户。拉紧窗帘。只允许伪人进入。消灭所有人类。
+- [**伪人破门机制**](https://ninah.wiki.gal.tf/mechanics/breaching.md)
+- [**邪教徒塞人机制**](https://ninah.wiki.gal.tf/mechanics/cult.md)
+- [**应急中心带人机制**](https://ninah.wiki.gal.tf/mechanics/fema.md)
+- [**伪人猎杀机制**](https://ninah.wiki.gal.tf/mechanics/hunting.md)
+- [**游戏机制**](https://ninah.wiki.gal.tf/mechanics.md): 游戏《寻找伪人》的游戏机制
+- [**猫机制**](https://ninah.wiki.gal.tf/mechanics/neko.md)
+- [**做噩梦机制**](https://ninah.wiki.gal.tf/mechanics/nightmare.md)
+- [**道具机制**](https://ninah.wiki.gal.tf/mechanics/props.md)
+- [**义警检查机制**](https://ninah.wiki.gal.tf/mechanics/vigilante.md)
+- [**邻居**](https://ninah.wiki.gal.tf/characters/neighbor.md): 游戏《寻找伪人》角色之一
+- [**邻居女儿**](https://ninah.wiki.gal.tf/characters/daughter.md): 游戏《寻找伪人》角色之一 / 外号: Donk
+- [**酒吧男**](https://ninah.wiki.gal.tf/characters/esenin.md): 游戏《寻找伪人》角色之一 / 外号: 易建联、孙红雷/刘华强
+- [**收银女**](https://ninah.wiki.gal.tf/characters/anxiety.md): 游戏《寻找伪人》角色之一 / 外号: 高低肩 | 朵拉、蘑菇头 | 咸鱼梦想家、Tim
+- [**外套男**](https://ninah.wiki.gal.tf/characters/holod.md): 游戏《寻找伪人》角色之一 / 别称: 棉袄男、黑洞人
+- [**寡妇**](https://ninah.wiki.gal.tf/characters/jena.md): 游戏《寻找伪人》角色之一 / 外号: 纯爱战士
+- [**太阳男**](https://ninah.wiki.gal.tf/characters/sunboy.md): 游戏《寻找伪人》角色之一 / 外号: 戴夫
+- [**骗子男**](https://ninah.wiki.gal.tf/characters/loser.md): 游戏《寻找伪人》角色之一 / 外号: 旭旭宝宝/大马猴
+- [**医生**](https://ninah.wiki.gal.tf/characters/doctor.md): 游戏《寻找伪人》角色之一
+- [**应急中心工作人员**](https://ninah.wiki.gal.tf/characters/gas-mask.md): 游戏《寻找伪人》角色之一
+- [**辣妈**](https://ninah.wiki.gal.tf/characters/big-mommy.md): 游戏《寻找伪人》角色之一 / 外号: 雨姐、女良子
+- [**老奶奶**](https://ninah.wiki.gal.tf/characters/granny.md): 游戏《寻找伪人》角色之一
+- [**猎人**](https://ninah.wiki.gal.tf/characters/hunter.md): 游戏《寻找伪人》角色之一 / 别称: 护林员
+- [**预言家**](https://ninah.wiki.gal.tf/characters/prophet.md): 游戏《寻找伪人》角色之一 / 别称: 先知 / 外号: 光头/秃头/蛋头 | 辛吉飞
+- [**快递员**](https://ninah.wiki.gal.tf/characters/courier.md): 游戏《寻找伪人》角色之一 / 外号: 大学生
+- [**苍白伪人**](https://ninah.wiki.gal.tf/characters/intuder.md): 游戏《寻找伪人》角色之一
+- [**黑帮成员**](https://ninah.wiki.gal.tf/characters/wolfhound.md): 游戏《寻找伪人》角色之一
+- [**情人**](https://ninah.wiki.gal.tf/characters/sassy.md): 游戏《寻找伪人》角色之一 / 别称: 性感女
+- [**姐妹 - 姐姐**](https://ninah.wiki.gal.tf/characters/alconosity.md): 游戏《寻找伪人》角色之一
+- [**愤怒男**](https://ninah.wiki.gal.tf/characters/anger.md): 游戏《寻找伪人》角色之一 / 外号: 孙笑川
+- [**妈宝男**](https://ninah.wiki.gal.tf/characters/best-son.md): 游戏《寻找伪人》角色之一 / 外号: 范志毅
+- [**猫女士**](https://ninah.wiki.gal.tf/characters/ballerina.md): 游戏《寻找伪人》角色之一 / 别称: 芭蕾女
+- [**无亲少女**](https://ninah.wiki.gal.tf/characters/biglebow.md): 游戏《寻找伪人》角色之一 / 别称: 叛逆女孩
+- [**盲男**](https://ninah.wiki.gal.tf/characters/blind.md): 游戏《寻找伪人》角色之一 / 别称: 瞎子男
+- [**雄起男**](https://ninah.wiki.gal.tf/characters/buddy.md): 游戏《寻找伪人》角色之一 / 外号: 泰森、刀哥 | 大嘴
+- [**夫妻**](https://ninah.wiki.gal.tf/characters/couple.md): 游戏《寻找伪人》角色之一 / 外号: 家暴男 | 刀哥
+- [**邪教徒 - 一号**](https://ninah.wiki.gal.tf/characters/cultist-1.md): 游戏《寻找伪人》角色之一
+- [**邪教徒 - 二号**](https://ninah.wiki.gal.tf/characters/cultist-2.md): 游戏《寻找伪人》角色之一
+- [**邪教徒 - 三号**](https://ninah.wiki.gal.tf/characters/cultist-3.md): 游戏《寻找伪人》角色之一
+- [**邪教领袖**](https://ninah.wiki.gal.tf/characters/priest.md): 游戏《寻找伪人》角色之一
+- [**瘾君子**](https://ninah.wiki.gal.tf/characters/dude.md): 游戏《寻找伪人》角色之一 / 外号: 吴京 | Rapper | 脏辫男
+- [**恋尸者**](https://ninah.wiki.gal.tf/characters/edgar-poe.md): 游戏《寻找伪人》角色之一 / 外号: 中分头、坤坤
+- [**前部长**](https://ninah.wiki.gal.tf/characters/sweating.md): 游戏《寻找伪人》角色之一 / 外号: 良子
+- [**消防员**](https://ninah.wiki.gal.tf/characters/firefighter.md): 游戏《寻找伪人》角色之一 / 外号: 干尸
+- [**缝嘴外国人**](https://ninah.wiki.gal.tf/characters/foreigner.md): 游戏《寻找伪人》角色之一
+- [**前应急中心员工**](https://ninah.wiki.gal.tf/characters/former-fema.md): 游戏《寻找伪人》角色之一
+- [**占卜师**](https://ninah.wiki.gal.tf/characters/fortuneteller.md): 游戏《寻找伪人》角色之一
+- [**受伤男**](https://ninah.wiki.gal.tf/characters/fugitive.md): 游戏《寻找伪人》角色之一
+- [**掘墓人**](https://ninah.wiki.gal.tf/characters/undertaker.md): 游戏《寻找伪人》角色之一
+- [**不眠男**](https://ninah.wiki.gal.tf/characters/intruder.md): 游戏《寻找伪人》角色之一 / 外号: 嘉豪
+- [**拾荒者**](https://ninah.wiki.gal.tf/characters/marauder.md): 游戏《寻找伪人》角色之一 / 别称: 乞丐
+- [**母子**](https://ninah.wiki.gal.tf/characters/mother.md): 游戏《寻找伪人》角色之一
+- [**修女**](https://ninah.wiki.gal.tf/characters/nun.md): 游戏《寻找伪人》角色之一 / 外号: 范小勤
+- [**较真男**](https://ninah.wiki.gal.tf/characters/provocateur.md): 游戏《寻找伪人》角色之一 / 外号: 奥巴马
+- [**年轻小伙**](https://ninah.wiki.gal.tf/characters/raskolnikov.md): 游戏《寻找伪人》角色之一 / 别称: 头巾小伙 / 外号: 包租婆、鹰眼
+- [**姐妹 - 妹妹**](https://ninah.wiki.gal.tf/characters/sirin.md): 游戏《寻找伪人》角色之一
+- [**出租车司机**](https://ninah.wiki.gal.tf/characters/taxi-driver.md): 游戏《寻找伪人》角色之一
+- [**幼儿园老师**](https://ninah.wiki.gal.tf/characters/teacher.md): 游戏《寻找伪人》角色之一
+- [**阴谋论者**](https://ninah.wiki.gal.tf/characters/conspiracy-theorist.md): 游戏《寻找伪人》角色之一 / 别称: 博士
+- [**义警**](https://ninah.wiki.gal.tf/characters/vigilante.md): 游戏《寻找伪人》角色之一 / 外号: 疯子
+- [**轮椅男**](https://ninah.wiki.gal.tf/characters/alexander.md): 游戏《寻找伪人》角色之一
+- [**应急中心之妻**](https://ninah.wiki.gal.tf/characters/wife-fema.md): 游戏《寻找伪人》角色之一 / 外号: 海关女 | 化妆女、小丑女 | 嚣张女
+- [**蘑菇食者**](https://ninah.wiki.gal.tf/characters/mushroom-eater.md): 游戏《寻找伪人》角色之一 / 别称: 蘑菇老头
+- [**不朽男**](https://ninah.wiki.gal.tf/characters/yakob.md): 游戏《寻找伪人》角色之一 / 别称: 不死男、不死之人
+- [**雨衣小孩**](https://ninah.wiki.gal.tf/characters/yellow-boy.md): 游戏《寻找伪人》角色之一
+- [**乐观男**](https://ninah.wiki.gal.tf/characters/luka.md): 游戏《寻找伪人》角色之一 / 外号: 绿帽男、绿丝袜、揽佬
+- [**刺青女**](https://ninah.wiki.gal.tf/characters/alt.md): 游戏《寻找伪人》角色之一 / 外号: 佩恩 | F4 组合键
+- [**剧院男**](https://ninah.wiki.gal.tf/characters/bald.md): 游戏《寻找伪人》角色之一 / 外号: 秃头
+- [**前科犯**](https://ninah.wiki.gal.tf/characters/experienced.md): 游戏《寻找伪人》角色之一 / 外号: 裸男 | 违规哥、封号哥
+- [**童话爱好者**](https://ninah.wiki.gal.tf/characters/fairy-teller.md): 游戏《寻找伪人》角色之一 / 外号: 毕业大学生 | L | Rug
+- [**负债人**](https://ninah.wiki.gal.tf/characters/funny-guy.md): 游戏《寻找伪人》角色之一 / 别称: 老赖 外号: 乌鲁鲁
+- [**逃学生**](https://ninah.wiki.gal.tf/characters/jacket.md): 游戏《寻找伪人》角色之一 / 别称: 在读大学生 外号: 双下巴 | 夹克男
+- [**麻风病患者**](https://ninah.wiki.gal.tf/characters/leper.md): 游戏《寻找伪人》角色之一
+- [**疯男**](https://ninah.wiki.gal.tf/characters/nervous.md): 游戏《寻找伪人》角色之一 / 别称: 疯子、精神病患者 外号: M | 恐龙头
+- [**摇滚男**](https://ninah.wiki.gal.tf/characters/rocker.md): 游戏《寻找伪人》角色之一 / 外号: 吉他张
+- [**受创女**](https://ninah.wiki.gal.tf/characters/tough.md): 游戏《寻找伪人》角色之一 / 外号: 短发女 | 恐龙头
+- [**外国旅者**](https://ninah.wiki.gal.tf/characters/tourist.md): 游戏《寻找伪人》角色之一 / 外号: 将军、太阳
+- [**劲能佳成瘾者**](https://ninah.wiki.gal.tf/characters/unstable.md): 游戏《寻找伪人》角色之一 / 别称: 劲能佳小伙
+
+## Links
+
+- **游戏攻略**
+  - [游戏机制](/mechanics/)
+  - [人物图鉴](/characters/)
+  - [游戏结局](/endings/)
+- **游戏资源**
+  - [Steam 官网](https://s.team)
+  - [游戏主页](https://store.steampowered.com/app/3180070/_/)
+  - [开发商主页](https://store.steampowered.com/curator/39433050)
+- **友链**
+  - [广告](https://ja7.gal.tf/ad)
+  - [回忆溢出工作组](https://oom-wg.dev)
+  - [200OK Working](https://200ok.work)
+
+---
+
+> [**Full Content**](https://ninah.wiki.gal.tf/llms-full.txt): All pages in single file

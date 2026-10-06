@@ -1,0 +1,6211 @@
+# [人物图鉴](https://ninah.wiki.gal.tf/characters)
+
+> 游戏《寻找伪人》的人物图鉴
+
+游戏人物主要分为几类:
+
+* 住客（在门前选择是否放入或被特定角色强行塞入）
+* 机制（不进门，但是通过在门前交流 **获得道具**/**带走人**/**塞入人**/**触发结局** 等）
+* 彩蛋（与其他游戏的联动角色，不会进门）
+
+<Callout type="idea">
+  部分住客会在被拒绝进门时拿出道具再次请求，此时可以获得道具并放入或仍然拒绝
+
+  <Callout>
+    部分角色会固定拿道具，部分为随机概率，包括
+
+    **人物**
+
+    与
+
+    **道具**
+  </Callout>
+</Callout>
+
+<Callout type="idea">
+  每个住客均有自己的
+
+  **个人剧情**
+
+  （部分是
+
+  **结局**
+
+  ），并且在夜间会发出一些声音？
+</Callout>
+
+***
+
+
+
+
+
+<Cards>
+  {Object.entries((await charsConfig.getSchemas()).characters.bundled.paths).map(([key, item]) =>
+      (info => (
+        <Card
+          key={key}
+          icon={getPageTreePeers(source.getPageTree(), '/characters').find(peer => peer.url === '/characters/' + key)?.icon}
+          title={info.summary}
+          description={info.parameters.find(item => item.name === 'aka')?.example}
+          href={key.toLowerCase()}
+        />
+      ))(item[Object.keys(item)[0].toLowerCase()])
+    )}
+</Cards>
+
+
+# [坦然面对必然发生的事](https://ninah.wiki.gal.tf/endings/embrace-the-inevitable)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+*预言家* 会在 **第三天** 告知 *猫女士* 会到来
+
+如果在 **第四天** 放进猫女，预言家会在 **第五天** 再来，
+并要求在 **第六、七天** 期间**不查住客的任何特征**
+
+<Callout type="idea">
+  在此期间仍可
+
+  **自查**
+
+  特征，也可以与住客
+
+  **对话**
+</Callout>
+
+若完成任务，预言家则会在 **第九天** 再来，并要求在地下室挖洞
+
+挖洞 **三次** 即可挖通，之后预言家会再次到来并要求跳洞，下一天便可以跳洞摔死，与“死亡”会面并住进仅有自己的房子
+
+<Callout type="idea">
+  挖洞可以通过此方法加快速度：在有饮料的情况下，挖洞后喝饮料再挖，重复多次以快速挖通
+
+  > 因为挖洞会耗光体力，但是体力多少并不影响挖洞多少，所以通过喝饮料恢复一格体力来反复挖洞
+</Callout>
+
+
+# [黑暗之中（常规单人结局）](https://ninah.wiki.gal.tf/endings/in-the-dark)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+存活十四天后，在家里**只有自己**的情况下进入地下室
+
+
+# [游戏结局](https://ninah.wiki.gal.tf/endings)
+
+> 游戏《寻找伪人》的游戏结局
+
+当完整游玩游戏中的十四天后，会按照家里是否没有伪人而触发常规的好/坏结局
+
+<Callout type="idea">
+  家里除自己外
+
+  **空无一人**
+
+  则是另一个独立结局，原本会触发没有伪人的好结局
+</Callout>
+
+在此期间，也可以通过各种剧情发展触发相应的插曲结局（均为坏结局）
+
+***
+
+
+
+
+
+<Cards>
+  {getPageTreePeers(source.getPageTree(), '/endings').map(peer => (
+      <Card key={peer.url} title={peer.name} href={peer.url} />
+    ))}
+</Cards>
+
+
+# [愿死亡涤荡我们的罪孽！](https://ninah.wiki.gal.tf/endings/may-death-cleanse-us-of-our-sins)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+保证三个 *邪教徒* 存活被 *邪教领袖* 带走，并接受要求参加他们的自焚仪式
+
+
+# [我并非独自一人（常规坏结局）](https://ninah.wiki.gal.tf/endings/no-im-not-alone)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+存活十四天后，在家里**有伪人**的情况下进入地下室
+
+
+# [是蘑菇还是天谴？](https://ninah.wiki.gal.tf/endings/shroom-or-doom)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+如果家里有 **猫**，*蘑菇食者* 会在 **第六天** 到来，并可以选择是否接取任务
+
+若接取任务，则需要在 **第七、八、九、十天** 期间内按顺序完成以下任务:
+
+* 从地下室拿取**蘑菇**后，再到**冰箱**将其吃掉
+* 吃掉放在柜子上的**苹果**
+* 将卧室**钟表**调整时间
+
+<Callout>
+  一天一个任务
+</Callout>
+
+他还会在 **第九天** 再次到来，告知可以触发结局
+
+完成任务后即可在 **第十天** 与其同行，因错过时机而被要求回档
+
+
+# [末日之子](https://ninah.wiki.gal.tf/endings/the-child-of-doom)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+与 *情人* 同住 **三天** 后，她即会爆体而亡，需要通过以下方式寻找婴儿:
+
+* 窗帘后
+* 吊顶灯上
+* 浴缸下的盆子里
+
+寻找完毕后当晚即会被一群人分尸婴儿，然后自己被抬走钉死
+
+
+# [结局？（常规好结局）](https://ninah.wiki.gal.tf/endings/the-end)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+存活十四天后，在家里**没有伪人**的情况下进入地下室
+
+
+# [欢迎加入应急中心](https://ninah.wiki.gal.tf/endings/welcome-to-fema)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+满足以下条件后即可被强制带去应急中心上班:
+
+* 在应急中心正式公布电话号码后拨打 **三次**
+* 与应急中心工作人员交谈时使用**客气的措辞**
+* 用完 **_应急中心收治函_**
+
+
+# [义警之怒](https://ninah.wiki.gal.tf/endings/wrath-of-the-vigilante)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+在被 *义警* 检查时被其判断为伪人，与其对枪并后手反杀
+
+<Callout title="检查天数">
+  **第十天**
+
+  、
+
+  **第十二天**
+</Callout>
+
+
+# [我是杀人凶手](https://ninah.wiki.gal.tf/endings/yes-im-a-murderer)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+当家里累计有 **四个** **人类**因**自己错杀**而身亡时，*预言家* 会在当晚到来，自己则会被住客赶出
+
+<Callout>
+  在住客的个人剧情中 **强制身亡** 的，不计入此计数
+  <Callout type="warn">但只要是自己亲手杀的，均计入此计数</Callout>
+</Callout>
+
+
+# [我的确独自一人](https://ninah.wiki.gal.tf/endings/yes-im-alone)
+
+> 游戏《寻找伪人》的游戏结局之一
+
+在与 *苍白伪人* 交谈中，被其破门掐死
+
+<Callout title="交谈天数">
+  **第三天**
+
+  、
+
+  **第五天**
+
+  、
+
+  **第九天**
+
+  、
+
+  **第十一天**
+</Callout>
+
+
+# [《寻找伪人》游戏攻略文档](https://ninah.wiki.gal.tf/)
+
+> 警告：切勿外出。紧闭门户。拉紧窗帘。只允许伪人进入。消灭所有人类。
+
+<i>《[寻找伪人](https://store.steampowered.com/app/3180070/_/)》</i>
+是由开发商 [*Trioskaz*](https://store.steampowered.com/curator/39433050) 开发的一款爆火游戏，本文档用于介绍其
+*游戏机制*、*人物图鉴*、*游戏结局*
+
+<Callout type="success" title="喜欢就关注一下吧！">
+  本文档由
+  [抖音@白彩恋](https://www.douyin.com/user/MS4wLjABAAAA0Qky6v51FFmIvNH9040CDO0uDozQZRdkTmsfShYP1pXGAb1zEXm72H6XSLXYvRNK)
+  编写，由 [抖音@Rug](https://www.douyin.com/user/MS4wLjABAAAA27iQnjKSmFnpgvZq_khJAhUW3LbVRSSoK0FDn1YkHokZNUvCZHmr3Nl9QWUZriux)
+  提供游戏经验，关注关注\~
+</Callout>
+
+
+
+<Cards>
+  <Card title="游戏机制" icon="<FileSliders />" href="/mechanics/">
+    在游戏中的十四天会有哪些人来横插一脚？
+  </Card>
+
+  <Card title="人物图鉴" icon="<UserRoundSearch />" href="/characters/">
+    短短半个月，足不出户也能认识这么多人？
+  </Card>
+
+  <Card title="游戏结局" icon="<ClipboardClock />" href="/endings/">
+    你可以带领屋里的住客走向何方？
+  </Card>
+</Cards>
+
+
+# [伪人破门机制](https://ninah.wiki.gal.tf/mechanics/breaching)
+
+*苍白伪人* 会在 **第三天**、**第五天**、**第九天**、**第十一天** 到来
+
+与他交谈时，会询问家里是否只有自己一个人:
+
+* 只要回答只有自己**一个人**，无论家里**是否有人**，**均会破门**
+* 只有当家里的确有**其他人**并且回答**还有其他人**时，才**不会破门**
+
+<Callout type="warn">
+  **第十一天** 的到来有额外判断条件：如果家里除自己外**没有人类**，则同样会被破门
+
+  > 也就是在家里没有其他人的基础上多了一个住客是否都是伪人
+</Callout>
+
+<Callout type="warn">
+  回答只有自己与还有其他人的选项位置会变换！点错了可就凉啦！
+</Callout>
+
+破门后，会被掐死，触发**插曲结局**
+
+
+# [邪教徒塞人机制](https://ninah.wiki.gal.tf/mechanics/cult)
+
+*邪教领袖* 会在 **第八天** 强行塞入 **三个** *邪教徒*，无法拒绝
+
+<Callout type="warn">
+  *邪教徒* 会坐满大沙发，若该位置上已有住客，则会被**强行赶走**
+
+  <>  </>
+
+  他们是**人类**，并且会像其他住客一样被伪人**猎杀**/被应急中心工作人员**带走**，也会被其他后来的住客**赶走**
+</Callout>
+
+教头会在 **第十天** 再来，若**三个**教徒仍在屋中，则会让教徒**再停留一天**
+
+在 **第十一天** 时，教头会带走所有教徒，并且可以选择是否参加自焚仪式以触发**插曲结局**
+
+<Callout type="idea">
+  只要教徒不完整，都会被教头视为“**死完**”，但若还有存活教徒，会在**第十天**到来时**直接带走**，**第十一天**则**不会再来**
+</Callout>
+
+
+# [应急中心带人机制](https://ninah.wiki.gal.tf/mechanics/fema)
+
+*应急中心工作人员* 会在 **第四天**、**第五天**、**第八天**、**第十天** 带走人
+
+在 **第四天**、**第五天** 均会带走 **一人**，**第八天**、**第十天** 则是 **两人**
+
+<Callout>
+  工作人员**不会带走主角自己**，当屋中没有其他人时，他会**直接离开**
+
+  <>  </>
+
+  但若仍有其他人但**不满足人数需求**（需要**两人**但只有**一人**），则仍会带走**剩余住客**
+</Callout>
+
+在 **第五天** 会额外给一个 **_应急中心收治函_**
+
+若在 **第七天** 放入 *消防员*，则也会给一个 **_应急中心收治函_**
+
+<Callout type="idea">
+  **_应急中心收治函_** 可以用来指定住客会在下一次工作人员到来时被带走（无论其身份）
+
+  <>  </>
+
+  但若在此期间该住客身亡或离开，**不会返还**
+</Callout>
+
+
+# [伪人猎杀机制](https://ninah.wiki.gal.tf/mechanics/hunting)
+
+伪人本身并不会杀人，其猎杀机制是屋中伪人数量 **大于等于 *二*** 时，开始猎杀
+
+<Callout type="idea">
+  所以并不存在“
+
+  *好*
+
+  ”伪人，只是因为单个伪人并不会触发机制而已
+</Callout>
+
+当晚进入的住客若是人类，即便可以触发机制也不会被杀，但若是伪人且达到机制要求，则可以触发
+
+<Callout title="举个栗子">
+  * 家里如果已经有**一人类**与**一伪人**，当晚再进入**一伪人**时，**原有的人类**会被杀
+    * 但如果还进入**一人类**，因为是当晚进入的，**无法被选中**，仍然是**原有的人类**会被杀
+</Callout>
+
+
+# [游戏机制](https://ninah.wiki.gal.tf/mechanics)
+
+> 游戏《寻找伪人》的游戏机制
+
+游戏机制包括以下内容:
+
+* 强制带人机制（应急中心）/ 强制塞人机制（邪教徒）
+* 伪人猎杀机制
+* 伪人破门机制
+* 做噩梦机制
+* 猫机制
+* 义警检查机制（主角自身特征机制）
+* 道具机制（快递机制）
+
+***
+
+
+
+
+
+<Cards>
+  {getPageTreePeers(source.getPageTree(), '/mechanics').map(peer => (
+      <Card key={peer.url} title={peer.name} href={peer.url}>
+        {peer.description}
+      </Card>
+    ))}
+</Cards>
+
+
+# [猫机制](https://ninah.wiki.gal.tf/mechanics/neko)
+
+*预言家* 会在 **第三天** 告知 *猫女士* 会到来
+
+在 **第四天** 猫女会到来，放入即可获得 *猫*
+
+<Callout type="idea">
+  杀掉 
+
+  *猫女*
+
+   并不会影响 
+
+  *猫*
+
+   本身，但是要注意当晚放入她会不会触发伪人的猎杀机制哦
+</Callout>
+
+<Callout type="idea">
+  猫会掀开盖在地下室入口上的地毯，掀开后才可以走
+
+  **两个插曲结局**
+</Callout>
+
+喂给 *猫* **_猫粮_** 后，**当晚**会强制不触发伪人猎杀机制
+
+<Callout type="warn">
+  喂一次猫
+
+  **管一晚**
+
+  ，重复喂
+
+  **不会延长时效**
+
+  ！请注意不要把猫喂成大胃袋~
+</Callout>
+
+
+# [做噩梦机制](https://ninah.wiki.gal.tf/mechanics/nightmare)
+
+当家里累计有 **四个** **人类**因**伪人猎杀**而身亡时，会做噩梦，做梦后**所有住客均会离开**
+
+<Callout>
+  触发后计数清零，可以**重复触发**
+
+  > 因住客的个人剧情而身亡的，不计入此计数
+</Callout>
+
+
+# [道具机制](https://ninah.wiki.gal.tf/mechanics/props)
+
+## 快递 [#快递]
+
+订快递需要在 **第二天** 通过观看电视取得电话号码后才可电话订购，**每三天可以订一次**，**当晚** *快递员* 会送达快递
+
+<Callout>
+  若没有及时观看电视，则需要多等几天再看电视才可以获取电话号码
+</Callout>
+
+## 道具 [#道具]
+
+<Callout>
+  除啤酒是**无限供应**之外，其他道具均为**有限使用**
+
+  <>  </>
+
+  部分道具家里自带，部分道具可以通过快递订购，部分住客在进门时贿赂或个人剧情中也会给予道具
+</Callout>
+
+<TypeTable
+  type="{
+  波伯黑啤: {
+    type: (
+      <>
+        喝后<strong>清空</strong>体力
+      </>
+    ),
+    description: '由邻居带来的无限啤酒',
+    required: true
+  },
+  劲能佳: {
+    type: (
+      <>
+        喝后增加 <strong>一格</strong> 体力
+      </>
+    ),
+    description: (
+      <>
+        会使 <strong>三天</strong> 内<strong>眼睛变红并快速移动</strong>
+        <br />
+        可以通过快递订购（一次 <strong>两罐</strong>）
+      </>
+    ),
+    required: true
+  },
+  咖啡: {
+    type: (
+      <>
+        喝后在 <strong>四天</strong> 内增加 <strong>一格</strong> 体力槽
+      </>
+    ),
+    description: (
+      <>
+        会使 <strong>四天</strong> 内<strong>眼睛变红并快速移动</strong>
+        <br />
+        可以通过快递订购
+      </>
+    ),
+    required: true
+  },
+  猫粮: {
+    type: (
+      <>
+        用于<strong>喂猫</strong>
+      </>
+    ),
+    description: (
+      <>
+        会使 <strong>当晚</strong> 强制不触发伪人猎杀机制
+        <br />
+        可以通过快递订购（一次 <strong>两个</strong>）
+      </>
+    ),
+    required: true
+  },
+  香烟: {
+    type: (
+      <>
+        恢复<strong>所有体力</strong>，但 <strong>下一天</strong> 少 <strong>一格</strong> 体力
+      </>
+    ),
+    description: (
+      <>
+        会使 <strong>当天</strong> <strong>牙齿变黄</strong>
+        <br />
+        可以通过快递订购
+      </>
+    ),
+    required: true
+  },
+  康普茶: {
+    type: (
+      <>
+        用于<strong>存档</strong>
+      </>
+    ),
+    description: (
+      <>
+        会使<strong>腋下长真菌</strong>
+        <br />
+        家里自带 <strong>一罐</strong>，可以通过快递订购
+        <Callout>使用游戏菜单的保存功能同样可以存档</Callout>
+        <Callout type='warn'>
+          当 <i>情人</i> 存在于屋内时存档，会无法进行 <strong>末日之子</strong> 插曲结局，进入 BUG 状态
+        </Callout>
+      </>
+    ),
+    required: true
+  }
+}"
+/>
+
+
+# [义警检查机制](https://ninah.wiki.gal.tf/mechanics/vigilante)
+
+*义警* 会在 **第八天** 到来，不会检查主角
+
+在 **第十天** 再来时，则会第一次检查
+
+在 **第十二天** 则会第二次检查
+
+<Callout type="warn">
+  在第一次检查中检查过的部位无法在第二次检查中重复检查！
+</Callout>
+
+在两次检查中若被他判为伪人，则会直接对枪进入**插曲结局**
+
+## 主角自身特征 [#主角自身特征]
+
+<Callout type="warn">
+  电视播出的伪人特征均不属实，然而义警却盲目听信从而滥杀无辜，
+  所以在检查时要确保自身特征不符合电视播出的伪人特征才可以通过检查
+
+  <Callout title="通常建议让义警检查以下内容">
+    * **不挖洞**或挖洞后已经**洗手**: 检查双手
+    * 没喝过**饮料**/**咖啡**: 检查眼睛
+    * 已经**自查**过腋下: 检查腋下
+  </Callout>
+</Callout>
+
+<TypeTable
+  type="{
+  牙齿: {
+    type: '依情况通过',
+    description: (
+      <>
+        牙齿本来就很白，会被认定为伪人，可以通过<strong>吸烟</strong>来使得牙黄，然后才可检查牙齿
+      </>
+    ),
+    required: true
+  },
+  双手: {
+    type: '依情况通过',
+    description: (
+      <>
+        双手在不挖洞的情况下不会有泥土，可以直接检查
+        <br />
+        挖洞后可以通过<strong>自查</strong>来清洗双手
+      </>
+    ),
+    required: true
+  },
+  眼睛: {
+    type: '依情况通过',
+    description: (
+      <>
+        眼睛会在喝<strong>饮料</strong>或<strong>咖啡</strong>后变红，需要等几天才可消红
+      </>
+    ),
+    required: true
+  },
+  腋下: {
+    type: '依情况通过',
+    description: (
+      <>
+        腋下会<strong>每隔几天</strong>或<strong>喝茶后</strong>长真菌，可以通过<strong>自查</strong>
+        来清洗腋下
+      </>
+    ),
+    required: true
+  },
+  拍照: {
+    type: '未知情况',
+    description: '机制暂时未知，如果图片中头部有迷雾而其他地方正常，则可以通过检查',
+    required: true
+  },
+  耳朵: {
+    type: '无法通过',
+    description: '由于义警自发当义警过早，并不知道该检查点，检查耳朵会不通过',
+    required: true
+  }
+}"
+/>
+
+
+# [邻居](https://ninah.wiki.gal.tf/characters/neighbor)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"mechanism","info":"仅作为游戏向导在开局时进家介绍","plotDesc":"介绍游戏机制，并赠与啤酒，在后续得知其死讯","id":"neighbor"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [邻居女儿](https://ninah.wiki.gal.tf/characters/daughter)
+
+> 游戏《寻找伪人》角色之一 / 外号: Donk
+
+export const props = {"type":"human","plotVideo":"7558021114451053862","plotDesc":"可以得到一个电话号码","aka":"外号: Donk","id":"daughter"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [酒吧男](https://ninah.wiki.gal.tf/characters/esenin)
+
+> 游戏《寻找伪人》角色之一 / 外号: 易建联、孙红雷/刘华强
+
+export const props = {"type":"human","plotVideo":"7589205659707624750","plotDesc":"可以听他念诗然后看他哭","aka":"外号: 易建联、孙红雷/刘华强","id":"esenin"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [收银女](https://ninah.wiki.gal.tf/characters/anxiety)
+
+> 游戏《寻找伪人》角色之一 / 外号: 高低肩 | 朵拉、蘑菇头 | 咸鱼梦想家、Tim
+
+export const props = {"type":"visitor","plotVideo":"7555825382906170633","plotDesc":"可以将其枪决","aka":"外号: 高低肩 | 朵拉、蘑菇头 | 咸鱼梦想家、Tim","id":"anxiety"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [外套男](https://ninah.wiki.gal.tf/characters/holod)
+
+> 游戏《寻找伪人》角色之一 / 别称: 棉袄男、黑洞人
+
+export const props = {"type":"visitor","plotVideo":"7551518238560046375","plotDesc":"可以使同一房间内的其他住客全部身亡，随后可以将其枪决或赶走","aka":"别称: 棉袄男、黑洞人","id":"holod"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [寡妇](https://ninah.wiki.gal.tf/characters/jena)
+
+> 游戏《寻找伪人》角色之一 / 外号: 纯爱战士
+
+export const props = {"type":"human","plotVideo":"7551881861979491603","plotDesc":"可以看其年轻时的夫妻合照","aka":"外号: 纯爱战士","id":"jena"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [太阳男](https://ninah.wiki.gal.tf/characters/sunboy)
+
+> 游戏《寻找伪人》角色之一 / 外号: 戴夫
+
+export const props = {"type":"random","signs":{"eye":"眼黄为人，眼红为伪","armpit":"有红疹为人，无红疹为伪","pic":"发黄为人，发黑为伪"},"plotVideo":"7575448632665607460","plotDesc":"会喝酒喝吐","aka":"外号: 戴夫","id":"sunboy"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [骗子男](https://ninah.wiki.gal.tf/characters/loser)
+
+> 游戏《寻找伪人》角色之一 / 外号: 旭旭宝宝/大马猴
+
+export const props = {"type":"random","signs":{"hands":"无泥为人，有泥为伪","eye":"眼白为人，眼红为伪","armpit":"有毛为人，无毛为伪","pic":"有斑点为人，无斑点为伪"},"plotVideo":"7578767578902859042","aka":"外号: 旭旭宝宝/大马猴","id":"loser"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [医生](https://ninah.wiki.gal.tf/characters/doctor)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"ext":"重瞳不为伪！","hands":"无红疹为人，有红疹为伪","pic":"心有斑点为人，无斑点为伪"},"plotVideo":"7558350931935481097","id":"doctor"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [应急中心工作人员](https://ninah.wiki.gal.tf/characters/gas-mask)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"mechanism","plotDesc":"可以被其强制带去上班","id":"gas-mask"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [辣妈](https://ninah.wiki.gal.tf/characters/big-mommy)
+
+> 游戏《寻找伪人》角色之一 / 外号: 雨姐、女良子
+
+export const props = {"type":"visitor","plotVideo":"7561348180470729984","plotDesc":"可以将其枪决","aka":"外号: 雨姐、女良子","id":"big-mommy"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [老奶奶](https://ninah.wiki.gal.tf/characters/granny)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"visitor","id":"granny"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [猎人](https://ninah.wiki.gal.tf/characters/hunter)
+
+> 游戏《寻找伪人》角色之一 / 别称: 护林员
+
+export const props = {"type":"random","signs":{"teeth":"牙黄为人，牙白为伪","eye":"眼白为人，眼红为伪","pic":"举枪威胁 后同意为人，拒绝为伪","ear":"提起找什么为人，问看到了什么为伪"},"plotVideo":"7554308499853806899","aka":"别称: 护林员","id":"hunter"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [预言家](https://ninah.wiki.gal.tf/characters/prophet)
+
+> 游戏《寻找伪人》角色之一 / 别称: 先知 / 外号: 光头/秃头/蛋头 | 辛吉飞
+
+export const props = {"type":"mechanism","plotDesc":"可以听话摔死","aka":"别称: 先知 / 外号: 光头/秃头/蛋头 | 辛吉飞","id":"prophet"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [快递员](https://ninah.wiki.gal.tf/characters/courier)
+
+> 游戏《寻找伪人》角色之一 / 外号: 大学生
+
+export const props = {"type":"mechanism","plotDesc":"可以收其送的快递","aka":"外号: 大学生","id":"courier"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [苍白伪人](https://ninah.wiki.gal.tf/characters/intuder)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"mechanism","info":"要是进来了就会被掐死","plotDesc":"可以被其掐死","id":"intuder"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [黑帮成员](https://ninah.wiki.gal.tf/characters/wolfhound)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"teeth":"牙龈正常为人，牙龈出血为伪","armpit":"正常为人，溃烂为伪","pic":"双眼正常为人，双眼发光为伪"},"plotDesc":"可以将其枪决","id":"wolfhound"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [情人](https://ninah.wiki.gal.tf/characters/sassy)
+
+> 游戏《寻找伪人》角色之一 / 别称: 性感女
+
+export const props = {"type":"random","signs":{"eye":"蓝瞳为人，彩瞳为伪","armpit":"有茬为人，无茬为伪","pic":"双眼正常为人，双眼发光为伪"},"plotDesc":"会爆体而亡","aka":"别称: 性感女","id":"sassy"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [姐妹 - 姐姐](https://ninah.wiki.gal.tf/characters/alconosity)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"ext":"姐妹中有一人身亡或离开，另一人会拒绝任何检查，最好是先检查两人再枪决哦！","hands":"有红疹为人，无红疹为伪","eye":"说眼睛不红为人，说妹妹眼睛平静为伪","armpit":"有茬为人，无茬为伪","pic":"有螺旋为人，无螺旋为伪"},"plotVideo":"7556419583884807474","plotDesc":"在姐妹都存活的情况下可以得到一个电话号码","id":"alconosity"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [愤怒男](https://ninah.wiki.gal.tf/characters/anger)
+
+> 游戏《寻找伪人》角色之一 / 外号: 孙笑川
+
+export const props = {"type":"random","signs":{"teeth":"牙黄为人，牙白为伪","hands":"指甲正常为人，指甲脱落为伪","armpit":"无红疹为人，有红疹为伪","ear":"举枪威胁 后骂人为人，骂枪为伪"},"plotVideo":"7582900648946011438","plotDesc":"可以得到一个电话号码","aka":"外号: 孙笑川","id":"anger"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [妈宝男](https://ninah.wiki.gal.tf/characters/best-son)
+
+> 游戏《寻找伪人》角色之一 / 外号: 范志毅
+
+export const props = {"type":"random","signs":{"teeth":"牙黄为人，牙白为伪","hands":"受伤为人，无伤为伪","armpit":"沉默为人，说没处理过为伪","eye":"眼红为人，眼白为伪","pic":"正常为人，重影为伪"},"plotDesc":"可以得到一个电话号码","aka":"外号: 范志毅","id":"best-son"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [猫女士](https://ninah.wiki.gal.tf/characters/ballerina)
+
+> 游戏《寻找伪人》角色之一 / 别称: 芭蕾女
+
+export const props = {"type":"visitor","info":"放入即可获得 猫","plotVideo":"7552267397957209398","plotDesc":"可以将其枪决（会躲掉好几发子弹后自愿受死）","aka":"别称: 芭蕾女","id":"ballerina"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [无亲少女](https://ninah.wiki.gal.tf/characters/biglebow)
+
+> 游戏《寻找伪人》角色之一 / 别称: 叛逆女孩
+
+export const props = {"type":"random","signs":{"hands":"无红疹为人，有红疹为伪","eye":"举枪威胁 后沉默为人，询问为伪","pic":"有斑点为人，无斑点为伪"},"plotVideo":"7553591914688171303","aka":"别称: 叛逆女孩","id":"biglebow"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [盲男](https://ninah.wiki.gal.tf/characters/blind)
+
+> 游戏《寻找伪人》角色之一 / 别称: 瞎子男
+
+export const props = {"type":"human","plotVideo":"7552274567893388587","plotDesc":"会自缢","aka":"别称: 瞎子男","id":"blind"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [雄起男](https://ninah.wiki.gal.tf/characters/buddy)
+
+> 游戏《寻找伪人》角色之一 / 外号: 泰森、刀哥 | 大嘴
+
+export const props = {"type":"random","signs":{"hands":"无伤为人，受伤为伪","eye":"眼白为人，眼红为伪"},"plotVideo":"7555272684477713710","aka":"外号: 泰森、刀哥 | 大嘴","id":"buddy"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [夫妻](https://ninah.wiki.gal.tf/characters/couple)
+
+> 游戏《寻找伪人》角色之一 / 外号: 家暴男 | 刀哥
+
+export const props = {"type":"random","signs":{"ext":"实际上均为丈夫体征","hands":"受伤为人，无伤为伪","eye":"眼白为人，眼红为伪","armpit":"有毛为人，无毛为伪","ear":"问妻子耳朵是否为特征为人，说没有隐瞒为伪"},"plotVideo":"7553211114276818212","aka":"外号: 家暴男 | 刀哥","id":"couple"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [邪教徒 - 一号](https://ninah.wiki.gal.tf/characters/cultist-1)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"human","info":"会被 邪教领袖 强行塞入","plotDesc":"可以随其自焚","id":"cultist-1"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [邪教徒 - 二号](https://ninah.wiki.gal.tf/characters/cultist-2)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"human","info":"会被 邪教领袖 强行塞入","plotDesc":"可以随其自焚","id":"cultist-2"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [邪教徒 - 三号](https://ninah.wiki.gal.tf/characters/cultist-3)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"human","info":"会被 邪教领袖 强行塞入","plotDesc":"可以随其自焚","id":"cultist-3"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [邪教领袖](https://ninah.wiki.gal.tf/characters/priest)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"mechanism","plotDesc":"可以随其自焚","id":"priest"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [瘾君子](https://ninah.wiki.gal.tf/characters/dude)
+
+> 游戏《寻找伪人》角色之一 / 外号: 吴京 | Rapper | 脏辫男
+
+export const props = {"type":"random","signs":{"hands":"无泥为人，有泥为伪","eye":"眼红为人，眼白为伪","armpit":"无真菌为人，长真菌为伪"},"plotVideo":"7553967363117288714","plotDesc":"可以看其抽烟抽得烟雾缭绕","aka":"外号: 吴京 | Rapper | 脏辫男","id":"dude"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [恋尸者](https://ninah.wiki.gal.tf/characters/edgar-poe)
+
+> 游戏《寻找伪人》角色之一 / 外号: 中分头、坤坤
+
+export const props = {"type":"random","signs":{"teeth":"牙黄为人，牙白为伪","eye":"眼白为人，眼红为伪","armpit":"长真菌为人，无真菌为伪","pic":"正常为人，有触手为伪"},"plotVideo":"7583610159209942323","aka":"外号: 中分头、坤坤","id":"edgar-poe"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [前部长](https://ninah.wiki.gal.tf/characters/sweating)
+
+> 游戏《寻找伪人》角色之一 / 外号: 良子
+
+export const props = {"type":"random","signs":{"hands":"有 无伤、受伤 两种状态，无法判断，但 举枪威胁 时若为人会求死，若为伪会自曝手有泥土","eye":"有 眼白、眼红 两种状态，无法判断","armpit":"正常为人，溃烂为伪"},"plotVideo":"7559097073501605158","aka":"外号: 良子","id":"sweating"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [消防员](https://ninah.wiki.gal.tf/characters/firefighter)
+
+> 游戏《寻找伪人》角色之一 / 外号: 干尸
+
+export const props = {"type":"human","plotVideo":"7557595436698045722","plotDesc":"会病故","aka":"外号: 干尸","id":"firefighter"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [缝嘴外国人](https://ninah.wiki.gal.tf/characters/foreigner)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"human","plotVideo":"7565810588325022976","plotDesc":"可以得到一个电话号码","id":"foreigner"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [前应急中心员工](https://ninah.wiki.gal.tf/characters/former-fema)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"human","plotVideo":"7556417999050149166","plotDesc":"可以逼其拿出应急中心身份证件","id":"former-fema"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [占卜师](https://ninah.wiki.gal.tf/characters/fortuneteller)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"teeth":"牙黄为人，牙白为伪（细微差别）","eye":"眼白为人，眼红为伪","pic":"自缢为人，正常为伪","ear":"听其说完 听过风声为人，听过嗡嗡声为伪"},"plotVideo":"7590637777348234523","plotDesc":"可以得到一个电话号码，并可被其做法","id":"fortuneteller"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [受伤男](https://ninah.wiki.gal.tf/characters/fugitive)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"hands":"正常为人，受伤为伪","eye":"眼白为人，眼红为伪","armpit":"正常为人，受伤为伪","pic":"正常为人，手臂受伤为伪","ear":"质疑通过耳朵判断为人，质疑特征造成恐慌为伪"},"plotVideo":"7584271882413821235","id":"fugitive"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [掘墓人](https://ninah.wiki.gal.tf/characters/undertaker)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"eye":"提起不看太阳为人，提起等伪人出现为伪","pic":"正常为人，重影为伪"},"plotVideo":"7569884521588444431","id":"undertaker"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [不眠男](https://ninah.wiki.gal.tf/characters/intruder)
+
+> 游戏《寻找伪人》角色之一 / 外号: 嘉豪
+
+export const props = {"type":"random","signs":{"teeth":"牙白为人，牙黄为伪","hands":"指甲脱落为人，指甲正常为伪","eye":"眼白为人，眼红为伪","ear":"听其说完 问确定看到为人，提起睡眠与现实为伪"},"plotVideo":"7575818809576066340","plotDesc":"可以看其缩手缩头","aka":"外号: 嘉豪","id":"intruder"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [拾荒者](https://ninah.wiki.gal.tf/characters/marauder)
+
+> 游戏《寻找伪人》角色之一 / 别称: 乞丐
+
+export const props = {"type":"random","signs":{"hands":"感叹很脏为人，表明自己会弄脏它们为伪","armpit":"长真菌为人，无真菌为伪","pic":"正常为人，发黑为伪"},"aka":"别称: 乞丐","id":"marauder"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [母子](https://ninah.wiki.gal.tf/characters/mother)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"ext":"实际上均为母亲体征","pic":"宽波为人，窄波为伪"},"plotVideo":"7582137991754255656","plotDesc":"可以看她孩子丢了，可以得到一个电话号码","id":"mother"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [修女](https://ninah.wiki.gal.tf/characters/nun)
+
+> 游戏《寻找伪人》角色之一 / 外号: 范小勤
+
+export const props = {"type":"random","signs":{"eye":"提起疲惫痕迹为人，提起岁月痕迹为伪","pic":"正常为人，发黑为伪","ear":"正常为人，有蟑螂为伪"},"plotVideo":"7559485473870204175","plotDesc":"可以将其赶走","aka":"外号: 范小勤","id":"nun"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [较真男](https://ninah.wiki.gal.tf/characters/provocateur)
+
+> 游戏《寻找伪人》角色之一 / 外号: 奥巴马
+
+export const props = {"type":"random","signs":{"hands":"表明指甲没剪为人，表明指甲有泥为伪","eye":"正常为人，看前询问是否找红眼为伪","armpit":"有毛为人，无毛为伪","pic":"举枪威胁 感叹照片厉害为人，撒谎质疑为伪"},"plotVideo":"7551871819632987455","plotDesc":"可以将其赶走或枪决","aka":"外号: 奥巴马","id":"provocateur"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [年轻小伙](https://ninah.wiki.gal.tf/characters/raskolnikov)
+
+> 游戏《寻找伪人》角色之一 / 别称: 头巾小伙 / 外号: 包租婆、鹰眼
+
+export const props = {"type":"random","signs":{"teeth":"牙白为人，牙黄为伪","hands":"无泥为人，有泥为伪","eye":"蓝瞳为人，绿瞳为伪","pic":"正常为人，发紫为伪"},"plotVideo":"7580268763384122664","aka":"别称: 头巾小伙 / 外号: 包租婆、鹰眼","id":"raskolnikov"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [姐妹 - 妹妹](https://ninah.wiki.gal.tf/characters/sirin)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"ext":"姐妹中有一人身亡或离开，另一人会拒绝任何检查，最好是先检查两人再枪决哦！","teeth":"牙全为人，牙缺为伪","hands":"无红疹为人，有红疹为伪","eye":"眼白为人，眼红为伪","armpit":"无毛为人，有毛为伪","pic":"正常为人，发黑为伪"},"plotVideo":"7556419583884807474","plotDesc":"在姐妹都存活的情况下可以得到一个电话号码","id":"sirin"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [出租车司机](https://ninah.wiki.gal.tf/characters/taxi-driver)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"teeth":"牙白为人，牙黄为伪","hands":"指甲脏为人，干净为伪","eye":"眼红为人，眼白为伪","armpit":"有毛为人，无毛为伪"},"id":"taxi-driver"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [幼儿园老师](https://ninah.wiki.gal.tf/characters/teacher)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"human","plotVideo":"7554704235921820979","plotDesc":"会夺枪自尽","id":"teacher"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [阴谋论者](https://ninah.wiki.gal.tf/characters/conspiracy-theorist)
+
+> 游戏《寻找伪人》角色之一 / 别称: 博士
+
+export const props = {"type":"random","signs":{"teeth":"无红疹为人，有红疹为伪","eye":"眼白为人，眼红为伪（细微差别）","pic":"有斑点为人，无斑点为伪","ear":"正常为人，提起新闻广播为伪"},"plotVideo":"7577275815113559296","aka":"别称: 博士","id":"conspiracy-theorist"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [义警](https://ninah.wiki.gal.tf/characters/vigilante)
+
+> 游戏《寻找伪人》角色之一 / 外号: 疯子
+
+export const props = {"type":"mechanism","plotDesc":"可以与其对枪从而后手反杀","aka":"外号: 疯子","id":"vigilante"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [轮椅男](https://ninah.wiki.gal.tf/characters/alexander)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"teeth":"牙全为人，牙缺为伪","hands":"缺一指为人，缺全指为伪","eye":"眼白为人，眼红为伪（细微差别）","armpit":"无红疹为人，有红疹为伪","pic":"正常为人，发黑为伪","ear":"感叹为人，询问为伪"},"plotVideo":"7586940770314243355","plotDesc":"可以看其伸腿","id":"alexander"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [应急中心之妻](https://ninah.wiki.gal.tf/characters/wife-fema)
+
+> 游戏《寻找伪人》角色之一 / 外号: 海关女 | 化妆女、小丑女 | 嚣张女
+
+export const props = {"type":"random","signs":{"hands":"有美甲为人，无美甲为伪","eye":"眼白为人，眼红为伪","armpit":"正常为人，溃烂为伪"},"plotVideo":"7564678161842146594","plotDesc":"可以得到一个电话号码","aka":"外号: 海关女 | 化妆女、小丑女 | 嚣张女","id":"wife-fema"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [蘑菇食者](https://ninah.wiki.gal.tf/characters/mushroom-eater)
+
+> 游戏《寻找伪人》角色之一 / 别称: 蘑菇老头
+
+export const props = {"type":"mechanism","plotDesc":"可以被要求回档","aka":"别称: 蘑菇老头","id":"mushroom-eater"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [不朽男](https://ninah.wiki.gal.tf/characters/yakob)
+
+> 游戏《寻找伪人》角色之一 / 别称: 不死男、不死之人
+
+export const props = {"type":"visitor","info":"该人物为同一开发商旗下游戏《迷失之根》的联动角色","plotVideo":"7556013085719366922","aka":"别称: 不死男、不死之人","id":"yakob"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [雨衣小孩](https://ninah.wiki.gal.tf/characters/yellow-boy)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"special","info":"该人物为另一游戏《静默恐惧：老灯塔十五夜》的联动角色","id":"yellow-boy"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [乐观男](https://ninah.wiki.gal.tf/characters/luka)
+
+> 游戏《寻找伪人》角色之一 / 外号: 绿帽男、绿丝袜、揽佬
+
+export const props = {"type":"random","signs":{"teeth":"听其说完 正常为人，提起接受自己与死亡为伪","hands":"无红疹为人，有红疹为伪","eye":"正常为人，快速移动为伪","pic":"发绿为人，有斑点为伪","ear":"正常为人，看前提起声音迷失为伪"},"plotVideo":"7558754287325596937","aka":"外号: 绿帽男、绿丝袜、揽佬","id":"luka"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [刺青女](https://ninah.wiki.gal.tf/characters/alt)
+
+> 游戏《寻找伪人》角色之一 / 外号: 佩恩 | F4 组合键
+
+export const props = {"type":"random","signs":{"teeth":"牙龈正常为人，牙龈出血为伪","hands":"手指正常为人，手指出血为伪"},"plotVideo":"7592317544824917274","aka":"外号: 佩恩 | F4 组合键","id":"alt"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [剧院男](https://ninah.wiki.gal.tf/characters/bald)
+
+> 游戏《寻找伪人》角色之一 / 外号: 秃头
+
+export const props = {"type":"random","signs":{"hands":"伤口正常为人，伤口有红疹为伪","eye":"正常为人，快速移动为伪","armpit":"无真菌为人，长真菌为伪","pic":"多重影为人，分身为伪"},"aka":"外号: 秃头","id":"bald"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [前科犯](https://ninah.wiki.gal.tf/characters/experienced)
+
+> 游戏《寻找伪人》角色之一 / 外号: 裸男 | 违规哥、封号哥
+
+export const props = {"type":"random","signs":{"teeth":"牙龈正常为人，牙龈出血为伪","hands":"无红疹为人，有红疹为伪","eye":"说无用为人，说更糟且无用为伪"},"plotVideo":"7587503102316563722","aka":"外号: 裸男 | 违规哥、封号哥","id":"experienced"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [童话爱好者](https://ninah.wiki.gal.tf/characters/fairy-teller)
+
+> 游戏《寻找伪人》角色之一 / 外号: 毕业大学生 | L | Rug
+
+export const props = {"type":"random","signs":{"hands":"无泥为人，有泥且受伤为伪","eye":"眼白为人，眼红为伪","armpit":"竖伸为人，斜伸为伪","ear":"有耳垢为人，无耳垢为伪"},"aka":"外号: 毕业大学生 | L | Rug","id":"fairy-teller"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [负债人](https://ninah.wiki.gal.tf/characters/funny-guy)
+
+> 游戏《寻找伪人》角色之一 / 别称: 老赖 外号: 乌鲁鲁
+
+export const props = {"type":"random","signs":{"armpit":"溃烂为人，长真菌为伪","pic":"想看照片为人，不想看照片为伪"},"aka":"别称: 老赖 外号: 乌鲁鲁","id":"funny-guy"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [逃学生](https://ninah.wiki.gal.tf/characters/jacket)
+
+> 游戏《寻找伪人》角色之一 / 别称: 在读大学生 外号: 双下巴 | 夹克男
+
+export const props = {"type":"random","signs":{"teeth":"牙龈正常为人，牙龈出血为伪","hands":"受伤为人，有红疹为伪","pic":"无斑点为人，有斑点为伪"},"aka":"别称: 在读大学生 外号: 双下巴 | 夹克男","id":"jacket"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [麻风病患者](https://ninah.wiki.gal.tf/characters/leper)
+
+> 游戏《寻找伪人》角色之一
+
+export const props = {"type":"random","signs":{"teeth":"牙暗为人，牙白为伪","eye":"快速移动为人，缓慢移动为伪","armpit":"长真菌为人，无真菌为伪","pic":"无斑点为人，有斑点为伪"},"id":"leper"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [疯男](https://ninah.wiki.gal.tf/characters/nervous)
+
+> 游戏《寻找伪人》角色之一 / 别称: 疯子、精神病患者 外号: M | 恐龙头
+
+export const props = {"type":"random","signs":{"teeth":"干净为人，牙脏为伪","hands":"只提刺痛为人，还提挖土为伪","eye":"突然快速移动为人，匀速快速移动为伪","armpit":"无毛为人，有毛为伪","pic":"散发为人，重影为伪"},"plotVideo":"7591216345589599538","aka":"别称: 疯子、精神病患者 外号: M | 恐龙头","id":"nervous"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [摇滚男](https://ninah.wiki.gal.tf/characters/rocker)
+
+> 游戏《寻找伪人》角色之一 / 外号: 吉他张
+
+export const props = {"type":"random","signs":{"eye":"正常为人，提起回想经历为伪","armpit":"有毛为人，无毛为伪"},"aka":"外号: 吉他张","id":"rocker"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [受创女](https://ninah.wiki.gal.tf/characters/tough)
+
+> 游戏《寻找伪人》角色之一 / 外号: 短发女 | 恐龙头
+
+export const props = {"type":"random","signs":{"teeth":"牙龈正常为人，牙龈出血为伪","eye":"正常移动为人，缓慢移动为伪","armpit":"提起不想失望为人，提起不想杀人为伪","ear":"举枪威胁 骂人质疑为人，问看到什么为伪"},"aka":"外号: 短发女 | 恐龙头","id":"tough"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [外国旅者](https://ninah.wiki.gal.tf/characters/tourist)
+
+> 游戏《寻找伪人》角色之一 / 外号: 将军、太阳
+
+export const props = {"type":"random","signs":{"hands":"晒红为人，有红疹为伪","eye":"眼白为人，眼红为伪","pic":"散发黑为人，发紫为伪"},"aka":"外号: 将军、太阳","id":"tourist"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}
+
+# [劲能佳成瘾者](https://ninah.wiki.gal.tf/characters/unstable)
+
+> 游戏《寻找伪人》角色之一 / 别称: 劲能佳小伙
+
+export const props = {"type":"random","signs":{"ext":"眼绿不为伪！","teeth":"舌绿为人，牙绿为伪","hands":"无泥为人，有泥为伪","eye":"正常为人，有血丝为伪","armpit":"正常为人，发霉为伪"},"plotVideo":"7600118461741681958","plotDesc":"会自行离开","aka":"别称: 劲能佳小伙","id":"unstable"}
+
+<Callout
+  type={props.type === 'human' ? 'success' : props.type === 'visitor' ? 'warn' : props.type === 'random' ? 'idea' : undefined}
+  title={
+    props.type === 'mechanism' ? (
+      '该人物为机制角色，不会进家门哦~'
+    ) : props.type === 'human' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的人类</strong>哦！
+      </>
+    ) : props.type === 'visitor' ? (
+      <>
+        该人物为住客角色，并且是<strong>固定的伪人</strong>哦！
+      </>
+    ) : props.type === 'random' ? (
+      <>
+        该人物为住客角色，是人类或伪人是<strong>随机</strong>哦！
+      </>
+    ) : (
+      '该人物为彩蛋角色，不会进家门哦~'
+    )
+  }>
+  <img src={require(`@/assets/chars/${props.id}/char.webp`).default.src} alt='立绘' width='33%' />
+  {props.info && (
+    <>
+      <br />
+      {props.info}
+    </>
+  )}
+</Callout>
+
+{props.signs && <h2>判断人伪</h2>}
+{props.signs?.ext && <Callout type='idea'>{props.signs.ext}</Callout>}
+{
+props.signs &&
+
+<div className='force-show'><TypeTable
+  type={[
+    ['teeth', '牙齿'],
+    ['hands', '双手'],
+    ['eye', '眼睛'],
+    ['armpit', '腋下'],
+    ['pic', '照片'],
+    ['ear', '耳朵']
+  ].reduce((acc, [key, label]) => {
+    if (!props.signs[key]) return acc
+    acc[label] = {
+      type: props.signs[key],
+      description: (() => {
+        try {
+          const humanSrc = require(`@/assets/chars/${props.id}/signs/${key}-god.webp`).default.src
+          const visitorSrc = require(`@/assets/chars/${props.id}/signs/${key}-bad.webp`).default.src
+          return (
+            <Tabs groupId='human-type' items={['人类', '伪人']}>
+              <Tab><img src={humanSrc} width='55%' /></Tab>
+              <Tab><img src={visitorSrc} width='55%' /></Tab>
+            </Tabs>
+          )
+        } catch {}
+      })(),
+      required: true
+    }
+    return acc
+  }, {})}
+/></div>
+}
+
+import { Video } from 'lucide-react'
+
+{(props.plotVideo || props.plotDesc) && <h2>个人剧情</h2>}
+{props.plotVideo &&
+
+<Card icon={<Video />} title='人物个人剧情' href={`https://www.douyin.com/video/${props.plotVideo}`}>
+  by 抖音@Rug
+</Card>}
+{props.plotDesc && <Callout>{props.plotDesc}</Callout>}

@@ -1,0 +1,13 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.1g1rd0_yzjwro.webp","image"]
+:HL["/_next/static/media/hands-god.3rw5m_87bmob6.webp","image"]
+:HL["/_next/static/media/hands-bad.30nr-lsegok8r.webp","image"]
+:HL["/_next/static/media/eye-god.2-wy3p5rk61ce.webp","image"]
+:HL["/_next/static/media/eye-bad.2ltdvy6o1t7zn.webp","image"]
+:HL["/_next/static/media/armpit-god.02jvb_fput8xk.webp","image"]
+:HL["/_next/static/media/armpit-bad.1pk7ot3710sh8.webp","image"]
+:HL["/_next/static/media/ear-god.29vroqgefaym9.webp","image"]
+:HL["/_next/static/media/ear-bad.0p60-23q78jyz.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/fairy-teller","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.1qghgv0gtb38q.webp","image"]
+:HL["/_next/static/media/hands-god.09v5s_v2rjg01.webp","image"]
+:HL["/_next/static/media/hands-bad.06dbz6msl59ix.webp","image"]
+:HL["/_next/static/media/eye-god.1blyd8bdiiytb.webp","image"]
+:HL["/_next/static/media/eye-bad.0jyy0ro0ce5rr.webp","image"]
+:HL["/_next/static/media/pic-god.3bs0a3vtsv9ta.webp","image"]
+:HL["/_next/static/media/pic-bad.14nb1o31k-rsq.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/tourist","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.3jsne_2wll14s.webp","image"]
+:HL["/_next/static/media/eye-god.0wp_-04-n96z7.webp","image"]
+:HL["/_next/static/media/eye-bad.0d_ahclr3_vhk.webp","image"]
+:HL["/_next/static/media/armpit-god.0egol1xqvdwtp.webp","image"]
+:HL["/_next/static/media/armpit-bad.0hyacxemtesnn.webp","image"]
+:HL["/_next/static/media/pic-god.3e8fzqyh7ql88.webp","image"]
+:HL["/_next/static/media/pic-bad.30-hqg1wl8ntl.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/sunboy","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

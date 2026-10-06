@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.1pecwn_hl8zl9.webp","image"]
+:HL["/_next/static/media/teeth-god.315pfmmntmc3p.webp","image"]
+:HL["/_next/static/media/teeth-bad.2-3v0exl6fao5.webp","image"]
+:HL["/_next/static/media/armpit-god.3__7znzsen3-0.webp","image"]
+:HL["/_next/static/media/armpit-bad.2rsr7ak1tk0j0.webp","image"]
+:HL["/_next/static/media/pic-god.1euqfrnqo8tap.webp","image"]
+:HL["/_next/static/media/pic-bad.3l3yuhgtr5cu4.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/leper","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

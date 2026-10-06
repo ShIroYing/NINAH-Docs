@@ -1,0 +1,13 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.2m3jlhn27zugm.webp","image"]
+:HL["/_next/static/media/teeth-god.1ywd68t-3z9lr.webp","image"]
+:HL["/_next/static/media/teeth-bad.0d4um6cs6r-bj.webp","image"]
+:HL["/_next/static/media/hands-god.0ckbcmd9afd-9.webp","image"]
+:HL["/_next/static/media/hands-bad.0ysg89enck5l_.webp","image"]
+:HL["/_next/static/media/eye-god.1o28kf3570jnp.webp","image"]
+:HL["/_next/static/media/eye-bad.0vjezu72ppmqq.webp","image"]
+:HL["/_next/static/media/pic-god.2wkwcpf4kng6y.webp","image"]
+:HL["/_next/static/media/pic-bad.1t3s-vcjtu_ab.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/raskolnikov","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

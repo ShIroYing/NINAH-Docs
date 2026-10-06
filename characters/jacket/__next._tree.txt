@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.4195d71fh0ob4.webp","image"]
+:HL["/_next/static/media/teeth-god.3pmpi3uf93vd5.webp","image"]
+:HL["/_next/static/media/teeth-bad.0zz_xpbnz279c.webp","image"]
+:HL["/_next/static/media/hands-god.2v5amuph9p11k.webp","image"]
+:HL["/_next/static/media/hands-bad.3obf8o-c6cykc.webp","image"]
+:HL["/_next/static/media/pic-god.2_660z52erote.webp","image"]
+:HL["/_next/static/media/pic-bad.2vpfaqxz6g5vc.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/jacket","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}

@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/1ftb76j80iz25.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/2gs3drdnc84hp.css","style"]
+:HL["/_next/static/media/char.1klfkj4myizlf.webp","image"]
+:HL["/_next/static/media/teeth-god.1q6t3ic7nkxle.webp","image"]
+:HL["/_next/static/media/teeth-bad.3ad0j059m1jko.webp","image"]
+:HL["/_next/static/media/eye-god.0udfv5mjznubv.webp","image"]
+:HL["/_next/static/media/eye-bad.1io2ejhaoonz_.webp","image"]
+:HL["/_next/static/media/pic-god.1mf1dp5qjgqq5.webp","image"]
+:HL["/_next/static/media/pic-bad.1bj04mevwu8-f.webp","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"slug","param":{"type":"oc","key":"characters/fortuneteller","siblings":["CNAME","llms-full.txt","llms.md","llms.txt","og","search-data.json"]},"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"K4OpU-sdjtTkqO55lzuXS"}
